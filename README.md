@@ -1,32 +1,25 @@
-:root {
-    --الأساسي: #8b4513;
-    --ثانوي: #fdfaf3;
-    --bg: #c19a6b;
-    --نص: #2d241e;
-}
+ر<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مشروع الأكلات الشعبية في جازان</title>
+    <!-- ربط ملف الـ CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- استيراد الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Tajawal&display=swap" rel="stylesheet">
+</head>
+<body>
 
-body {
-    font-family: 'Tajawal', sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
-    margin: 0;
-    line-height: 1.6;
-}
+    <header>
+        <div>
+            <h1>الأكلات الشعبية في جازان</h1>
+            <p>تراث عريق ونكهة لا تُنسى</p>
+        </div>
+    </header>
 
-header {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80');
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-}
+    <main>
+        <!-- يمكنك إضافة محتوى الأكلات هنا -->
+    </main>
 
-h1 {
-    font-family: 'Amiri', serif;
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-}
+</body>
+</html>
