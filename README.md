@@ -1,100 +1,59 @@
-/* المتغيرات الأساسية المستوحاة من ألوان التراث */
-:root {
-    --primary-color: #8b4513;   /* البني الخشبي */
-    --secondary-color: #fdfaf3; /* اللون الكريمي */
-    --accent-color: #c19a6b;    /* لون الرمال */
-    --text-color: #2d241e;      /* البني الداكن للنصوص */
-}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكلات جازان الشعبية | تراث ونكهة</title>
+    <!-- ربط ملف التنسيق الخارجي -->
+    <link rel="stylesheet" href="style.css">
+    <!-- استيراد الخطوط العربية من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Tajawal:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    <header>
+        <div class="overlay">
+            <h1>الأكلات الشعبية في جازان</h1>
+            <p>رحلة في أعماق المذاق التهامي الأصيل</p>
+        </div>
+    </header>
 
-body {
-    font-family: 'Tajawal', sans-serif;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    line-height: 1.8;
-}
+    <section class="container">
+        <h2 class="section-title">أشهر الأطباق</h2>
+        
+        <div class="grid">
+            <!-- بطاقة المغش -->
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=500');"></div>
+                <div class="card-content">
+                    <h3>المغش</h3>
+                    <p>أشهر أطباق جازان، وهو عبارة عن لحم مع الخضار يُطبخ في إناء حجري داخل التنور.</p>
+                </div>
+            </div>
 
-/* الهيدر مع صورة خلفية */
-header {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                      url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80');
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-}
+            <!-- بطاقة الخمير -->
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=500');"></div>
+                <div class="card-content">
+                    <h3>الخمير (الذرة)</h3>
+                    <p>خبز مصنوع من الذرة الحمراء أو البيضاء المخمرة، يُخبز في "الميفا" ويقدم مع الإيدامات.</p>
+                </div>
+            </div>
 
-header h1 {
-    font-family: 'Amiri', serif;
-    font-size: 4rem;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-}
+            <!-- بطاقة المرسة -->
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1590595906931-81f04f0ccebb?q=80&w=500');"></div>
+                <div class="card-content">
+                    <h3>المرسة</h3>
+                    <p>طبق يجمع بين الحلاوة والملوحة، يتكون من الدقيق والموز والسمن والعسل.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-/* التنسيق العام للحاويات */
-.container {
-    max-width: 1100px;
-    margin: 50px auto;
-    padding: 0 20px;
-}
+    <footer>
+        <p>مشروع تراث جازان - 2026 &copy;</p>
+    </footer>
 
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 40px;
-    border-bottom: 3px solid var(--accent-color);
-    display: inline-block;
-    width: 100%;
-}
-
-/* نظام الشبكة (Grid) للبطاقات */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card-img {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-}
-
-.card-content {
-    padding: 20px;
-}
-
-.card-content h3 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-footer {
-    background: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 50px;
-}
+</body>
+</html>
